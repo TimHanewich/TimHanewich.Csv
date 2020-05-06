@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TimHanewich.Csv</id>
+    <version>1.0.0</version>
+    <authors>Tim Hanewich</authors>
+    <owners>Tim Hanewich</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>Csv Icon.png</icon>
+    <description>Lightweight library for reading and creating comma-separated-value (CSV) files.</description>
+    <tags>csv,file,spreadsheet,tim,hanewich</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\bin\Debug\netstandard2.0\TimHanewich.Csv.dll" target="lib\netstandard2.0\TimHanewich.Csv.dll" />
+    <file src="C:\Users\TaHan\Downloads\Csv Icon.png" target="Csv Icon.png" />
+  </files>
+</package>

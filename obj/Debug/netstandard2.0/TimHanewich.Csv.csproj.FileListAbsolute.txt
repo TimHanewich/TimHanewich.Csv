@@ -1,0 +1,9 @@
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\bin\Debug\netstandard2.0\TimHanewich.Csv.deps.json
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\bin\Debug\netstandard2.0\TimHanewich.Csv.dll
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\bin\Debug\netstandard2.0\TimHanewich.Csv.pdb
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.csprojAssemblyReference.cache
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.csproj.CoreCompileInputs.cache
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.AssemblyInfoInputs.cache
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.AssemblyInfo.cs
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.dll
+C:\Users\TaHan\Documents\GitHub\TimHanewich.Csv\obj\Debug\netstandard2.0\TimHanewich.Csv.pdb
