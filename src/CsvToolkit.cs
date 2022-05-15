@@ -141,7 +141,56 @@ namespace TimHanewich.Csv
                 JObject jo = new JObject();
                 for (int cn = 0; cn < PropertyNames.Count; cn++)
                 {
-                    jo.Add(PropertyNames[cn], csv.Rows[t].Values[cn]);
+                    bool added = false;
+
+                    //Int?
+                    if (added == false)
+                    {
+                        try
+                        {
+                            jo.Add(PropertyNames[cn], Convert.ToInt32(csv.Rows[t].Values[cn]));
+                            added = true;
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    
+
+                    //Float?
+                    if (added == false)
+                    {
+                        try
+                        {
+                            jo.Add(PropertyNames[cn], Convert.ToSingle(csv.Rows[t].Values[cn]));
+                            added = true;
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+
+                    //boolean?
+                    if (added == false)
+                    {
+                        try
+                        {
+                            jo.Add(PropertyNames[cn], Convert.ToBoolean(csv.Rows[t].Values[cn]));
+                            added = true;
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    
+                    //If it hasn't been added as a value, add it as a string
+                    if (added == false)
+                    {
+                        jo.Add(PropertyNames[cn], csv.Rows[t].Values[cn]);
+                    }
                 }
                 ToReturn.Add(jo);
             }
