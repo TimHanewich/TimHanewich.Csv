@@ -143,6 +143,17 @@ namespace TimHanewich.Csv
                 {
                     bool added = false;
 
+                    //Null?
+                    if (added == false)
+                    {
+                        string val = csv.Rows[t].Values[cn];
+                        if (val == "")
+                        {
+                            jo.Add(PropertyNames[cn], null);
+                            added = true;
+                        }
+                    }
+
                     //Int?
                     if (added == false)
                     {
