@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace TimHanewich.Csv
 {
-    public class CsvToolkit
+    public static class CsvToolkit
     {
 
         public static CsvFile JsonToCsv(string json)
@@ -118,6 +118,35 @@ namespace TimHanewich.Csv
 
             return csv;
 
+        }
+    
+        public static JArray ToJson(this CsvFile csv)
+        {
+            //Get the property names from the first row
+            DataRow HeaderRow = csv.Rows[0];
+            List<string> PropertyNames = new List<string>();
+            foreach (string val in HeaderRow.Values)
+            {
+                if (PropertyNames.Contains(val))
+                {
+                    throw new Exception("Unable to convert CSV to JSON: There was a duplicate property name in the header row.");
+                }
+                PropertyNames.Add(val);
+            }
+
+            //Construct
+            JArray ToReturn = new JArray();
+            for (int t = 1; t < csv.Rows.Count; t++)
+            {
+                JObject jo = new JObject();
+                for (int cn = 0; cn < PropertyNames.Count; cn++)
+                {
+                    jo.Add(PropertyNames[cn], csv.Rows[t].Values[cn]);
+                }
+                ToReturn.Add(jo);
+            }
+
+            return ToReturn;
         }
     }
 }
